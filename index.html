@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="calc-background">
+        <div class="calc-body">
+            <!-- HEADER --------->
+            <div class="header">
+                <h3><a href="index.html">Calculator</a></h3>
+
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25" viewBox="0 0 172 172"
+                    style=" fill:#333;">
+                    <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                        stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                        font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                        style="mix-blend-mode: normal">
+                        <path d="M0,172v-172h172v172z" fill="none"></path>
+                        <g id="original-icon" fill="#333333">
+                            <path
+                                d="M129,14.33333h-86c-7.91917,0 -14.33333,6.41417 -14.33333,14.33333v114.66667c0,7.91917 6.41417,14.33333 14.33333,14.33333h86c7.91917,0 14.33333,-6.41417 14.33333,-14.33333v-114.66667c0,-7.91917 -6.41417,-14.33333 -14.33333,-14.33333zM129,57.33333h-86v-28.66667h86zM64.5,86h-14.33333v-14.33333h14.33333zM64.5,114.66667h-14.33333v-14.33333h14.33333zM64.5,143.33333h-14.33333v-14.33333h14.33333zM121.83333,143.33333h-43v-14.33333h43zM93.16667,114.66667h-14.33333v-14.33333h14.33333zM121.83333,114.66667h-14.33333v-14.33333h14.33333zM121.83333,86h-14.33333v-14.33333h14.33333zM93.16667,86h-14.33333v-14.33333h14.33333z">
+                            </path>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- DISPLAY SCREEN --------->
+            <div class="display">
+                <input type="text" class="input" id="result">
+            </div>
+
+            <!-- BUTTON AREA ------->
+            <div class="button-area">
+                <!-- row 1 -->
+                <button class="clearbtn" onclick="clearAll('C')">C</button>
+                <button class="clearAllBtn" onclick="clearAll('CE')">CE</button>
+                <button class="btn" onclick="getNumber('/')">&divide;</button>
+                <button class="btn" onclick="getNumber('%')">%</button>
+                <!-- row 2 -->
+                <button class="btn" onclick="getNumber('7')">7</button>
+                <button class="btn" onclick="getNumber('8')">8</button>
+                <button class="btn" onclick="getNumber('9')">9</button>
+                <button class="btn2" onclick="getNumber('*')">x</button>
+                <!-- row 3 -->
+                <button class="btn" onclick="getNumber('4')">4</button>
+                <button class="btn" onclick="getNumber('5')">5</button>
+                <button class="btn" onclick="getNumber('6')">6</button>
+                <button class="btn" onclick="getNumber('-')">-</button>
+                <!-- row 4 -->
+                <button class="btn" onclick="getNumber('1')">1</button>
+                <button class="btn" onclick="getNumber('2')">2</button>
+                <button class="btn" onclick="getNumber('3')">3</button>
+                <button class="btn2" onclick="getNumber('+')">+</button>
+                <!-- row 5 -->
+                <button class="btn" onclick="getNumber('0')">0</button>
+                <button class="btn3" onclick="getNumber('00')">00</button>
+                <button class="btn3" onclick="getNumber('.')">.</button>
+                <button class="btn3 equals" onclick="getResult('=')">=</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="js/app.js"></script>
+
+</html>
